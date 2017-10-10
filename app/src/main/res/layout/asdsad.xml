@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.sandroid.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="me.irvanfh.kelompok6.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/img1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/ic_icons"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:drawableLeft="@mipmap/ic_arr_back"
+        android:layout_below="@+id/img1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/ic_arr_next"
+        android:text="Nalezene spoje"
+        android:background="@color/colorAccent"
+        android:textColor="#ffff"/>
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgdistop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_dis_top"/>
+        <ImageView
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_dis_mid"/>
+        <ImageView
+            android:layout_marginTop="85dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_dis_bott"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:text="Praha hl.n."
+        android:textSize="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_below="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="06:30"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt3"
+        android:layout_below="@+id/txt1"
+        android:text="asdasdasdas"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt4"
+        android:layout_below="@id/txt3"
+        android:layout_marginLeft="50dp"
+        android:text="Brno hl.nl."
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt5"
+        android:layout_below="@id/txt3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="08:17"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/txtKM"
+        android:text="255 KM"
+        android:textSize="50dp"
+        android:layout_below="@id/txt5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtKM"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/img2"
+            android:layout_below="@id/txtKM"
+            android:background="@mipmap/ic_time"
+            android:layout_marginRight="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTime"
+            android:layout_below="@id/txtKM"
+            android:text="2 Hod 40 Min"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:textColor="#ffff"
+        android:text="Koupit jizdenku"
+        android:id="@+id/button" />
+
+
+</RelativeLayout>
